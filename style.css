@@ -46,19 +46,30 @@
 
 #muralsBtn{
   position: fixed;
-  bottom: 90px;
+
+  top: 55%;          /* move toward logo center */
   left: 50%;
-  transform: translateX(-50%);
-  background: rgba(0,0,0,0.75);
+  transform: translate(-50%, -50%);
+
+  background: rgba(0,0,0,0.6);
   color: #fff;
-  padding: 10px 18px;
-  text-decoration: none;
+  padding: 12px 22px;
+
   border-radius: 999px;
+  text-decoration: none;
   font-size: 14px;
-  opacity: 1;
-  transition: opacity 0.35s ease, transform 0.35s ease;
-  z-index: 1001;
+  letter-spacing: 1px;
+
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.15);
+
+  z-index: 99999;
+  transition: all 0.3s ease;
 }
+#muralsBtn:hover{
+  transform: translate(-50%, -50%) scale(1.06);
+}
+
 
 #muralsBtn:hover{
   transform: translateX(-50%) scale(1.05);
