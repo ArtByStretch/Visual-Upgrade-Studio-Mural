@@ -98,6 +98,23 @@ $(document).ready(function(){
           $('.scroll-up-btn').removeClass("show");
       }
   });
+
+//                 ADD NEW STuFF chatgpt
+
+      // hide "scroll down" hint after user starts scrolling
+    if(this.scrollY > 20){
+        $('#scrollHint').addClass('hide');
+        $('#muralsBtn').css('opacity', '0');   // optional: hide murals button on scroll
+    } else {
+        $('#scrollHint').removeClass('hide');
+        $('#muralsBtn').css('opacity', '1');   // optional: show again at top
+    }
+
+
+
+
+
+  
   // slide-up script
   $('.scroll-up-btn').click(function(){
       $('html').animate({scrollTop: 0});
