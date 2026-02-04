@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>About | ArtByStretch</title>
+  <meta name="description" content="NYC-based artist and Local 46 lather by trade. Murals, vinyl installs, and design concepts built to match each space and brand." />
+
+  <!-- Stops white flash -->
+  <style>html,body{background:#000;margin:0}</style>
+
+  <!-- Main site CSS -->
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- About page layout helpers (small, contained) -->
+  <style>
+    .page {
+      background:#000;
+      color:#fff;
+      min-height:100vh;
+      padding-top: 130px; /* room for fixed navbar */
+      padding-bottom: 70px;
+    }
+    .wrap{
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .about-grid{
+      display:grid;
+      grid-template-columns: 320px 1fr;
+      gap: 28px;
+      align-items: start;
+    }
+    @media (max-width: 900px){
+      .about-grid{ grid-template-columns: 1fr; }
+      .page{ padding-top: 150px; }
+    }
+
+    .card2{
+      border: 1px solid rgba(255,255,255,0.10);
+      background: rgba(255,255,255,0.04);
+      border-radius: 14px;
+      padding: 18px;
+    }
+
+    .profile-img{
+      width: 100%;
+      max-width: 320px;
+      display:block;
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,0.10);
+      background: #0b0b0b;
+    }
+
+    .pill{
+      display:inline-block;
+      padding: 8px 14px;
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 999px;
+      background: rgba(255,255,255,0.05);
+      font-size: 13px;
+      letter-spacing: .5px;
+      margin-bottom: 12px;
+    }
+
+    h1{
+      font-size: clamp(30px, 4vw, 54px);
+      line-height: 1.05;
+      margin: 10px 0 14px;
+    }
+    .lead{
+      color: rgba(255,255,255,0.78);
+      font-size: 18px;
+      line-height: 1.7;
+      max-width: 780px;
+    }
+
+    .meta{
+      margin-top: 14px;
+      display:grid;
+      gap: 10px;
+      color: rgba(255,255,255,0.78);
+      line-height: 1.6;
+    }
+    .meta strong{ color:#fff; font-weight: 700; }
+
+    .cta-row{
+      display:flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 16px;
+      align-items:center;
+    }
+    .btn2{
+      display:inline-block;
+      padding: 10px 18px;
+      border-radius: 999px;
+      text-decoration:none;
+      font-size: 14px;
+      letter-spacing: .4px;
+      border: 1px solid rgba(255,255,255,0.15);
+      background: rgba(255,255,255,0.06);
+      color:#fff;
+      backdrop-filter: blur(6px);
+      transition: transform .2s ease, background .2s ease;
+    }
+    .btn2:hover{ transform: translateY(-1px); background: rgba(255,255,255,0.10); }
+    .btn2.primary{
+      border-color: rgba(138,158,121,0.55);
+      background: rgba(138,158,121,0.22);
+    }
+
+    .section{
+      margin-top: 26px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding-top: 22px;
+    }
+
+    .footer2{
+      margin-top: 40px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      color: rgba(255,255,255,0.55);
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar (same system as your site) -->
+  <nav class="navbar">
+    <div class="max-width">
+      <div class="logo">
+        <a href="./index.html">ArtByStretch</a>
+      </div>
+
+      <ul class="menu">
+        <li><a href="./index.html" class="menu-btn">Home</a></li>
+        <li><a href="./about.html" class="menu-btn">About</a></li>
+        <li><a href="./murals.html" class="menu-btn">Murals</a></li>
+        <li><a href="https://arielamunoz.myportfolio.com/" class="menu-btn" target="_blank" rel="noopener">Portfolio</a></li>
+        <li><a href="./contact.html" class="menu-btn">Contact</a></li>
+      </ul>
+
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page">
+    <div class="wrap">
+
+      <div class="about-grid">
+        <!-- Left: image + quick booking -->
+        <div class="card2">
+          <img class="profile-img" src="./images/okjh.png" alt="ArtByStretch portrait" loading="lazy" decoding="async">
+
+          <div class="section">
+            <span class="pill">NYC • Murals + Vinyl • After 4PM</span>
+
+            <div class="meta">
+              <div><strong>Based in:</strong> New York City</div>
+              <div><strong>Works with:</strong> Coffee shops, gyms, salons, restaurants, retail, and community-driven businesses</div>
+              <div><strong>Availability:</strong> After 4PM weekdays + weekends</div>
+            </div>
+
+            <div class="cta-row">
+              <a class="btn2 primary" href="tel:+13474653270">Text / Call</a>
+              <a class="btn2" href="https://instagram.com/artbystretch" target="_blank" rel="noopener">Instagram</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: story -->
+        <div>
+          <span class="pill">About</span>
+          <h1>Hands-on craft meets digital design.</h1>
+
+          <p class="lead">
+            I’m a NYC-based artist and ironworker (Local 46 Lather by trade) who’s been creating art since the first grade.
+            I started designing in Photoshop in high school, and over the last five years expanded into 3D art and visuals using Blender.
+            My work blends hands-on craft with digital design—bringing bold, site-specific artwork to real-world spaces.
+          </p>
+
+          <div class="section card2">
+            <h2 style="margin:0 0 10px; font-size:22px;">What I do</h2>
+            <p class="lead" style="font-size:16px; margin:0;">
+              Custom murals, vinyl installations (glass & exterior), and original design concepts—built to match each space and brand.
+              The goal is to create pieces that elevate businesses, attract attention, and feel intentional to the environment they live in.
+            </p>
+          </div>
+
+          <div class="section card2">
+            <h2 style="margin:0 0 10px; font-size:22px;">How to book</h2>
+            <p class="lead" style="font-size:16px; margin:0;">
+              Send 2–3 wall photos, rough size, your neighborhood, and the vibe you’re going for. Text is fastest—IG works too.
+            </p>
+
+            <div class="cta-row">
+              <a class="btn2 primary" href="tel:+13474653270">347-465-3270</a>
+              <a class="btn2" href="./murals.html">See Murals Page →</a>
+            </div>
+          </div>
+
+          <div class="footer2">
+            © <span id="year"></span> ArtByStretch • Visual Upgrade Studio
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script>
+    // Footer year
+    const year = document.getElementById("year");
+    if (year) year.textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
