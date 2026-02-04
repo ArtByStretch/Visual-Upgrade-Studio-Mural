@@ -7,20 +7,10 @@
 /* New new scroll hide */
 
 #scrollHint {
-  position: fixed;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 18px;
-  letter-spacing: 2px;
-  opacity: 0.8;
-  transition: opacity 0.4s ease;
-  pointer-events: none;
-  z-index: 1000;
-
-  color: white;                 /* ADD THIS */
-  text-shadow: 0 2px 10px rgba(0,0,0,0.7);  /* OPTIONAL but nice */
+  z-index: 99999;
+  color: white;
 }
+
 
 #scrollHint.hide {
   opacity: 0;
