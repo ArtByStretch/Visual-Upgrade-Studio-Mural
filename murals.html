@@ -18,12 +18,23 @@
   <!-- Murals page layout helpers (small + contained so it doesn’t mess with your homepage) -->
   <style>
     /* Page base */
-    .page {
-      background: #000;
-      color: #fff;
-      min-height: 100vh;
-      padding-top: 120px; /* gives space under your fixed navbar */
-    }
+   .page {
+  background: #000;
+  color: #fff;
+  min-height: 100vh;
+  padding-top: 140px; /* desktop safe */
+}
+
+/* Mobile: navbar gets taller, so give more room */
+@media (max-width: 900px) {
+  .page { padding-top: 190px; }
+}
+
+/* Extra small phones */
+@media (max-width: 500px) {
+  .page { padding-top: 210px; }
+}
+
 
     .wrap {
       width: 100%;
