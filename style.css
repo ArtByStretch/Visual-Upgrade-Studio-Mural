@@ -7,6 +7,12 @@
 /* New new scroll hide */
 
 #scrollHint {
+  z-index: 99999;
+  color: white;
+}
+
+
+#scrollHint {
   position: fixed;
   bottom: 40px;
   left: 50%;
