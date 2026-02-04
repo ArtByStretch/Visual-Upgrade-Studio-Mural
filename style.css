@@ -7,8 +7,28 @@
 /* New new scroll hide */
 
 #scrollHint {
-  z-index: 99999;
-  color: white;
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 18px;
+  letter-spacing: 2px;
+
+  opacity: 0.9;
+  color: rgba(255,255,255,0.9);   /* NEW */
+  text-shadow: 0 6px 18px rgba(0,0,0,0.6); /* NEW */
+
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+
+  z-index: 99999; /* safer above canvas/navbar */
+
+  animation: floatHint 1.6s ease-in-out infinite; /* NEW */
+}
+
+@keyframes floatHint {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50%      { transform: translateX(-50%) translateY(6px); }
 }
 
 
