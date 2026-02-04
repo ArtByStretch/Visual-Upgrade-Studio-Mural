@@ -17,6 +17,9 @@
   transition: opacity 0.4s ease;
   pointer-events: none;
   z-index: 1000;
+
+  color: white;                 /* ADD THIS */
+  text-shadow: 0 2px 10px rgba(0,0,0,0.7);  /* OPTIONAL but nice */
 }
 
 #scrollHint.hide {
