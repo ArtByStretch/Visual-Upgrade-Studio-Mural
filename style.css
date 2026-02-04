@@ -823,6 +823,29 @@ canvas {
   .navbar{ padding: 12px 14px; }
   .page{ padding-top: 150px; }
 }
+/* FORCE navbar side padding at all sizes (override media queries) */
+.navbar{
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+}
+
+@media (max-width: 947px){
+  .navbar{
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+}
+
+@media (max-width: 500px){
+  .navbar{
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+}
+.navbar{
+  background: rgba(0,0,0,0.35) !important;
+  backdrop-filter: blur(8px);
+}
 
 
 }
