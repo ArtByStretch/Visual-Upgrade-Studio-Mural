@@ -793,4 +793,36 @@ canvas {
   padding-right: 0;
 }
 
+  /* === GLOBAL NAV POLISH (fix edge hugging + mobile overlap) === */
+.navbar{
+  left: 0;
+  right: 0;
+  padding: 18px 24px;           /* adds spacing from edges */
+  backdrop-filter: blur(8px);   /* optional, looks premium */
+  background: rgba(0,0,0,0.35); /* optional, helps readability */
+}
+
+.navbar .max-width{
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0;                   /* prevents double padding */
+}
+
+/* Make sure the page content never hides under the fixed navbar */
+.page{
+  padding-top: 110px;
+}
+
+@media (max-width: 900px){
+  .navbar{ padding: 14px 18px; }
+  .page{ padding-top: 130px; }
+}
+
+@media (max-width: 600px){
+  .navbar{ padding: 12px 14px; }
+  .page{ padding-top: 150px; }
+}
+
+
 }
