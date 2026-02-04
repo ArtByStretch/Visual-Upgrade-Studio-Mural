@@ -84,6 +84,15 @@ function render() {
 
 $(document).ready(function(){
   $(window).scroll(function(){
+
+    //new scroll hide
+
+    if (this.scrollY > 5) {
+  $('#scrollHint').addClass('hide');
+} else {
+  $('#scrollHint').removeClass('hide');
+}
+
       // sticky navbar on scroll script
       if(this.scrollY > 20){
           $('.navbar').addClass("sticky");
